@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title></title>
+
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" 
+		src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		
+		
+		<style>
+		
+		.topbar {
+			opacity: 0.8;
+			background-color: #F0F5FF;
+			height: 80px;
+			margin-top: 4px;
+			width: 100%;
+		}
+			
+		#topmenu {
+			float: right;
+			font-variant: small-caps;
+		}
+	
+		#topmenu ul {
+			margin: 0;
+			padding: 0;
+		}
+	
+		#topmenu li {
+			list-style: none;
+			font-weight: bold;
+			font-size: 14px;
+			height: 100%;
+			padding: 28px 20px 17px 20px;
+			float: right;
+		}
+		
+		#topmenu a {
+			color: #504A4B;
+		}
+		
+		#login {
+			float: left;
+			font-variant: small-caps;
+			background-color: #3EA99F;
+			list-style: none;
+			font-weight: bold;
+			font-size: 14px;
+			height: 100%;
+			padding: 28px 32px 20px 32px;
+			float: right;
+		}
+		
+		#login a {
+			color: #F0F5FF;
+		}
+		
+		a:hover {
+			text-decoration: none;
+		}
+		
+		.active li {
+			color: teal; 
+		}
+		
+		.break {
+			clear: both;
+		}
+
+		.toggle-nav {
+			display: none;
+		}
+		
+		@media screen and (max-width: 675px) {
+			.topbar {
+				height: 60px;
+			}
+			
+			#topmenu li {
+				font-size: 0.9em;
+				padding: 20px 8px;
+			}
+			
+			#login {
+				font-size: 0.9em;
+				padding: 20px 25px 0px 25px;;
+			}
+
+		}
+		
+		@media screen and (max-width: 400px) {
+		
+					
+		.toggle-nav {
+			width: 60px;
+			height: 60px;
+			border: none;
+			background-color: #F0F5FF;
+			color: #3EA99F;
+			front-weight: bold;
+			font-size: 1.8em;
+			float: right;
+			padding-top: 5px;
+			display: inline;
+			position: relative;
+		}
+		
+		#login, #topmenu {
+			display: none;
+			padding: 4px 0;
+			
+		}
+		
+		#topmenu li  {
+			background-color: #F0F5FF;
+			width: 100%;
+			height: 10px;
+			position: relative;
+			padding: 15px 0 20px 40px;
+		}
+		
+		#login li {
+			background-color: #F0F5FF;
+			width: 100%;
+			height: 30px;
+
+		}
+		
+		
+		</style>
+		
+</head>
+
+<body>
+
+<nav class="topbar">
+	
+	<div id="logodiv">
+		<img src="" />
+	</div>
+	
+	<button class="toggle-nav">☰</button>
+	
+	<div class="break"></div>
+	
+	<div id="login">
+		<ul class="dropdown">
+			<li><a href="">login</a></li>
+		</ul>
+	</div>
+	
+	<div id="topmenu">
+		<ul class="dropdown">
+			<li><a href="">rewards</a></li>
+			<li><a href="">exclusive rates</a></li>
+			<li><a href="">find my rate</a></li>
+			<li class="active" id="hiw"><a href="">how it works</a></li>	
+		</ul>
+	</div>
+	
+</nav>
+
+<div class="break"></div>
+
+<script>
+
+$(document).ready(function() {
+	$('.toggle-nav').click(function(e) {
+		$('#topmenu').toggle();
+	
+		e.preventDefault();
+	});
+
+});
+
+
+</script>
+
+</body>
+</html>
+	
