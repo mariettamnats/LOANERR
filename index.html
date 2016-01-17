@@ -42,12 +42,13 @@
 			font-weight: bold;
 			font-size: 14px;
 			height: 100%;
-			padding: 28px 20px 17px 20px;
 			float: right;
 		}
 		
 		#topmenu a {
 			color: #504A4B;
+			display: block;
+			padding: 28px 20px 17px 20px;
 		}
 		
 		#login {
@@ -58,12 +59,13 @@
 			font-weight: bold;
 			font-size: 14px;
 			height: 100%;
-			padding: 28px 32px 20px 32px;
 			float: right;
 		}
 		
 		#login a {
 			color: #F0F5FF;
+			display: block;
+			padding: 28px 32px 20px 32px;
 		}
 		
 		a:hover {
@@ -87,61 +89,69 @@
 				height: 60px;
 			}
 			
-			#topmenu li {
+			#topmenu a {
 				font-size: 0.9em;
 				padding: 20px 8px;
 			}
 			
-			#login {
+			#login a {
 				font-size: 0.9em;
 				padding: 20px 25px 0px 25px;;
 			}
 
 		}
 		
+		
 		@media screen and (max-width: 400px) {
-		
 					
-		.toggle-nav {
-			width: 60px;
-			height: 60px;
-			border: none;
-			background-color: #F0F5FF;
-			color: #3EA99F;
-			front-weight: bold;
-			font-size: 1.8em;
-			float: right;
-			padding-top: 5px;
-			display: inline;
-			position: relative;
-		}
-		
-		#login, #topmenu {
-			display: none;
-			padding: 4px 0;
+			.toggle-nav {
+				width: 60px;
+				height: 60px;
+				border: none;
+				background-color: #F0F5FF;
+				color: #3EA99F;
+				front-weight: bold;
+				font-size: 1.8em;
+				float: right;
+				padding-top: 5px;
+				display: inline;
+				position: relative;
+			}
 			
-		}
-		
-		#topmenu li  {
-			background-color: #F0F5FF;
-			width: 100%;
-			height: 10px;
-			position: relative;
-			padding: 12px 0 25px 40px;
-		}
-		
-		#login {
-			background-color: #F0F5FF;
-			width: 100%;
-			height: 30px;
-			padding: 10px 0 25px 40px;
-			position: absolute;
-			top: 220px;
-			float: left;
-		}
-		
-		#login a {
-			color: #3EA99F;
+			#login, #topmenu {
+				display: none;
+				padding: 3px 0;
+			}
+			
+			#topmenu li  {
+				width: 100%;
+				height: 40px;
+				padding: 0;
+				margin: 0;
+			}
+			
+			#topmenu a {
+				background-color: #F0F5FF;
+				display: block;
+				padding: 10px 0 10px 40px;
+				font-size: 0.9em;
+			}
+			
+			#login {
+				background-color: #F0F5FF;
+				width: 100%;
+				height: 45px;
+				position: absolute;
+				top: 228px;
+			}
+			
+			#login a {
+				color: #3EA99F;
+				display: block;
+				padding: 10px 0 25px 40px;
+				font-size: 0.9em;
+				
+			}
 		}
 		
 		</style>
@@ -182,10 +192,9 @@
 <script>
 
 $(document).ready(function() {
-	$('.toggle-nav').click(function(e) {
+	$('.toggle-nav').click(function() {
 		$('#topmenu, #login').toggle();
 	
-		e.preventDefault();
 	});
 
 });
