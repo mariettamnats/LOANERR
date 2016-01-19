@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 		
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="bootstrap.min.js"></script>
@@ -72,6 +73,10 @@
 			text-decoration: none;
 		}
 		
+		a {
+			text-decoration: none;
+		}
+		
 		.active li {
 			color: teal; 
 		}
@@ -84,13 +89,40 @@
 			display: none;
 		}
 		
-		@media screen and (max-width: 675px) {
+		.jumbotron {
+			height: 475px;
+		}
+		
+		h4 {
+			font-size: 40px;
+			font-family: 'Lato', sans-serif;
+			font-weight: bold;
+			position: relative;
+			top: 50px;
+		}
+		
+		h2 {
+			font-size: 40px; 
+			font-weight: bold;
+			position: relative;
+			top: 30px;
+		}
+		
+		.jumbotron p {
+			font-size: 1em;
+			font-family: calibri, arial, sans-serif;
+			position: relative;
+			top: 40px;
+		}
+		
+		
+		@media screen and (max-width: 800px) {
 			.topbar {
 				height: 60px;
 			}
 			
 			#topmenu a {
-				font-size: 0.9em;
+				font-size: 0.9em;file:///C:/Users/Marietta/Desktop/Recent%20work/LOANERR/Web/index.html
 				padding: 20px 8px;
 			}
 			
@@ -102,30 +134,35 @@
 		}
 		
 		
-		@media screen and (max-width: 400px) {
-					
+		@media screen and (max-width: 550px) {
+			
+			.topbar {
+				height: 45px;
+			}
+			
 			.toggle-nav {
-				width: 60px;
-				height: 60px;
+				width: 45px;
+				height: 45px;
 				border: none;
 				background-color: #F0F5FF;
 				color: #3EA99F;
 				front-weight: bold;
 				font-size: 1.8em;
 				float: right;
-				padding-top: 5px;
+				padding-top: 4px;
 				display: inline;
 				position: relative;
 			}
 			
 			#login, #topmenu {
 				display: none;
+				width: 100%;
 				padding: 3px 0;
 			}
 			
 			#topmenu li  {
 				width: 100%;
-				height: 40px;
+				height: 35px;
 				padding: 0;
 				margin: 0;
 			}
@@ -133,7 +170,7 @@
 			#topmenu a {
 				background-color: #F0F5FF;
 				display: block;
-				padding: 10px 0 10px 40px;
+				padding: 8px 0 8px 40px;
 				font-size: 0.9em;
 			}
 			
@@ -142,16 +179,42 @@
 				width: 100%;
 				height: 45px;
 				position: absolute;
-				top: 228px;
+				top: 195px;
 			}
 			
 			#login a {
 				color: #3EA99F;
 				display: block;
-				padding: 10px 0 25px 40px;
+				padding: 8px 0 10px 40px;
 				font-size: 0.9em;
-				
 			}
+			
+			.jumbotron {
+				height: 375px;
+			}
+			
+			h4 {
+				font-size: 30px;
+				font-family: 'Lato', sans-serif;
+				font-weight: bold;
+				position: relative;
+				top: 35px;
+			}
+			
+			h2 {
+				font-size: 30px; 
+				font-weight: bold;
+				position: relative;
+				top: 15px;
+			}
+			
+			.jumbotron p {
+				font-size: 0.9;
+				font-family: calibri, arial, sans-serif;
+				position: relative;
+				top: 20px;
+			}
+			
 		}
 		
 		</style>
@@ -188,6 +251,18 @@
 </nav>
 
 <div class="break"></div>
+
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-md-5 col-xs-8 col-md-offset-2 col-xs-offset-2">
+			<h4>This Is Loanerr<h4>
+			<h2>We Are Awesome</h2>
+			<p>We have the lowest interest rates and amazing rewards. Join us and see for yourself!</p>
+		</div>
+	</div>
+</div>
+
+
 
 <script>
 
