@@ -19,15 +19,18 @@
 		
 		
 		<style>
-		
 		.topbar {
 			opacity: 0.8;
 			background-color: #F0F5FF;
 			height: 80px;
-			margin-top: 4px;
+			margin-top: 2px;
 			width: 100%;
 		}
-			
+		
+		.navbar-brand img {
+			width: 150px;
+		}
+		
 		#topmenu {
 			float: right;
 			font-variant: small-caps;
@@ -49,21 +52,15 @@
 		#topmenu a {
 			color: #504A4B;
 			display: block;
-			padding: 28px 20px 17px 20px;
+			padding: 28px 20px 20px 20px;
+			height: 80px;
 		}
 		
-		#login {
-			float: left;
-			font-variant: small-caps;
+		#login-item {
 			background-color: #3EA99F;
-			list-style: none;
-			font-weight: bold;
-			font-size: 14px;
-			height: 100%;
-			float: right;
 		}
 		
-		#login a {
+		#login-item a {
 			color: #F0F5FF;
 			display: block;
 			padding: 28px 32px 20px 32px;
@@ -91,6 +88,7 @@
 		
 		.jumbotron {
 			height: 475px;
+			color: #504A4B;
 		}
 		
 		h4 {
@@ -115,29 +113,47 @@
 			top: 40px;
 		}
 		
+		@media screen and (min-width: 801px) {
+			.navbar-brand img {
+				margin-top: -3px;
+			}
+		}
 		
 		@media screen and (max-width: 800px) {
 			.topbar {
 				height: 60px;
 			}
 			
-			#topmenu a {
-				font-size: 0.9em;file:///C:/Users/Marietta/Desktop/Recent%20work/LOANERR/Web/index.html
-				padding: 20px 8px;
+			.navbar-brand img {
+				width: 105px;
+				position: relative;
+				top: -5px;
 			}
 			
-			#login a {
+			#topmenu a {
 				font-size: 0.9em;
-				padding: 20px 25px 0px 25px;;
+				padding: 20px 8px;
+				height: 60px;
 			}
-
+			
+			#login-item a {
+				padding: 20px 25px 15px 25px;
+			}
 		}
 		
 		
 		@media screen and (max-width: 550px) {
-			
 			.topbar {
 				height: 45px;
+			}
+			
+			.navbar-brand img {
+				position: relative;
+				top: -10px;
+			}
+			
+			a.navbar-brand {
+				padding-bottom: 0;
 			}
 			
 			.toggle-nav {
@@ -149,20 +165,18 @@
 				front-weight: bold;
 				font-size: 1.8em;
 				float: right;
-				padding-top: 4px;
+				padding-top: 1px;
 				display: inline;
 				position: relative;
 			}
 			
-			#login, #topmenu {
+			#topmenu {
 				display: none;
 				width: 100%;
-				padding: 3px 0;
 			}
 			
 			#topmenu li  {
 				width: 100%;
-				height: 35px;
 				padding: 0;
 				margin: 0;
 			}
@@ -170,23 +184,13 @@
 			#topmenu a {
 				background-color: #F0F5FF;
 				display: block;
-				padding: 8px 0 8px 40px;
+				padding-left: 40px;
 				font-size: 0.9em;
+				height: 35px;
 			}
 			
-			#login {
-				background-color: #F0F5FF;
-				width: 100%;
-				height: 45px;
-				position: absolute;
-				top: 195px;
-			}
-			
-			#login a {
+			#login-item a {
 				color: #3EA99F;
-				display: block;
-				padding: 8px 0 10px 40px;
-				font-size: 0.9em;
 			}
 			
 			.jumbotron {
@@ -194,27 +198,27 @@
 			}
 			
 			h4 {
-				font-size: 30px;
+				font-size: 27px;
 				font-family: 'Lato', sans-serif;
 				font-weight: bold;
 				position: relative;
-				top: 35px;
+				top: 25px;
 			}
 			
 			h2 {
-				font-size: 30px; 
+				font-size: 27px; 
 				font-weight: bold;
 				position: relative;
-				top: 15px;
+				top: 7px;
 			}
 			
 			.jumbotron p {
 				font-size: 0.9;
 				font-family: calibri, arial, sans-serif;
 				position: relative;
-				top: 20px;
+				top: 10px;
+				line-height: 16px;
 			}
-			
 		}
 		
 		</style>
@@ -225,22 +229,15 @@
 
 <nav class="topbar">
 	
-	<div id="logodiv">
-		<img src="" />
-	</div>
+	<a class="navbar-brand">
+		<img src="images/logo.png" />
+	</a>
 	
 	<button class="toggle-nav">☰</button>
 	
-	<div class="break"></div>
-	
-	<div id="login">
-		<ul class="dropdown">
-			<li><a href="">login</a></li>
-		</ul>
-	</div>
-	
 	<div id="topmenu">
 		<ul class="dropdown">
+			<li id="login-item"><a href="">login</a></li>
 			<li><a href="">rewards</a></li>
 			<li><a href="">exclusive rates</a></li>
 			<li><a href="">find my rate</a></li>
@@ -268,7 +265,7 @@
 
 $(document).ready(function() {
 	$('.toggle-nav').click(function() {
-		$('#topmenu, #login').toggle();
+		$('#topmenu').toggleClass('show');
 	
 	});
 
