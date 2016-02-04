@@ -11,217 +11,13 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/styles.css">
 		
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="bootstrap.min.js"></script>
 		<script type="text/javascript" 
 		src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-		
-		
-		<style>
-		.topbar {
-			opacity: 0.8;
-			background-color: #F0F5FF;
-			height: 80px;
-			margin-top: 2px;
-			width: 100%;
-		}
-		
-		.navbar-brand img {
-			width: 150px;
-		}
-		
-		#topmenu {
-			float: right;
-			font-variant: small-caps;
-		}
-	
-		#topmenu ul {
-			margin: 0;
-			padding: 0;
-		}
-	
-		#topmenu li {
-			list-style: none;
-			font-weight: bold;
-			font-size: 14px;
-			height: 100%;
-			float: right;
-		}
-		
-		#topmenu a {
-			color: #504A4B;
-			display: block;
-			padding: 28px 20px 20px 20px;
-			height: 80px;
-		}
-		
-		#login-item {
-			background-color: #3EA99F;
-		}
-		
-		#login-item a {
-			color: #F0F5FF;
-			display: block;
-			padding: 28px 32px 20px 32px;
-		}
-		
-		a:hover {
-			text-decoration: none;
-		}
-		
-		a {
-			text-decoration: none;
-		}
-		
-		.active li {
-			color: teal; 
-		}
-		
-		.break {
-			clear: both;
-		}
-
-		.toggle-nav {
-			display: none;
-		}
-		
-		.jumbotron {
-			height: 475px;
-			color: #504A4B;
-		}
-		
-		h4 {
-			font-size: 40px;
-			font-family: 'Lato', sans-serif;
-			font-weight: bold;
-			position: relative;
-			top: 50px;
-		}
-		
-		h2 {
-			font-size: 40px; 
-			font-weight: bold;
-			position: relative;
-			top: 30px;
-		}
-		
-		.jumbotron p {
-			font-size: 1em;
-			font-family: calibri, arial, sans-serif;
-			position: relative;
-			top: 40px;
-		}
-		
-		@media screen and (min-width: 801px) {
-			.navbar-brand img {
-				margin-top: -3px;
-			}
-		}
-		
-		@media screen and (max-width: 800px) {
-			.topbar {
-				height: 60px;
-			}
-			
-			.navbar-brand img {
-				width: 105px;
-				position: relative;
-				top: -5px;
-			}
-			
-			#topmenu a {
-				font-size: 0.9em;
-				padding: 20px 8px;
-				height: 60px;
-			}
-			
-			#login-item a {
-				padding: 20px 25px 15px 25px;
-			}
-		}
-		
-		
-		@media screen and (max-width: 550px) {
-			.topbar {
-				height: 45px;
-			}
-			
-			.navbar-brand img {
-				position: relative;
-				top: -10px;
-			}
-			
-			a.navbar-brand {
-				padding-bottom: 0;
-			}
-			
-			.toggle-nav {
-				width: 45px;
-				height: 45px;
-				border: none;
-				background-color: #F0F5FF;
-				color: #3EA99F;
-				front-weight: bold;
-				font-size: 1.8em;
-				float: right;
-				padding-top: 1px;
-				display: inline;
-				position: relative;
-			}
-			
-			#topmenu {
-				display: none;
-				width: 100%;
-			}
-			
-			#topmenu li  {
-				width: 100%;
-				padding: 0;
-				margin: 0;
-			}
-			
-			#topmenu a {
-				background-color: #F0F5FF;
-				display: block;
-				padding-left: 40px;
-				font-size: 0.9em;
-				height: 35px;
-			}
-			
-			#login-item a {
-				color: #3EA99F;
-			}
-			
-			.jumbotron {
-				height: 375px;
-			}
-			
-			h4 {
-				font-size: 27px;
-				font-family: 'Lato', sans-serif;
-				font-weight: bold;
-				position: relative;
-				top: 25px;
-			}
-			
-			h2 {
-				font-size: 27px; 
-				font-weight: bold;
-				position: relative;
-				top: 7px;
-			}
-			
-			.jumbotron p {
-				font-size: 0.9;
-				font-family: calibri, arial, sans-serif;
-				position: relative;
-				top: 10px;
-				line-height: 16px;
-			}
-		}
-		
-		</style>
 		
 </head>
 
@@ -251,11 +47,22 @@
 
 <div class="jumbotron">
 	<div class="row">
-		<div class="col-md-5 col-xs-8 col-md-offset-2 col-xs-offset-2">
-			<h4>This Is Loanerr<h4>
+		
+		<div class="col-lg-5 col-md-5 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+			<h4>This Is Loanner<h4>
 			<h2>We Are Awesome</h2>
 			<p>We have the lowest interest rates and amazing rewards. Join us and see for yourself!</p>
+			<button class="findMyRate first">Find My Rate</button>
 		</div>
+		
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-xs-offset-1">
+			<form method="get">
+				<input class="postalCode" type="text" name="postalCode" placeholder="Enter Your Postal Code" 
+				autocomplete="on" required />
+				<button class="submitPostalCode"> GO </button>
+			</form>
+		</div>
+		
 	</div>
 </div>
 
