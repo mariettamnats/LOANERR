@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title></title>
+    <title>Marietta M. Design - Landscape Design</title>
 
 		<meta charset="utf-8" />
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -10,77 +10,127 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-		<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500,400' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/styles.css">
-		
-		<script type="text/javascript" src="jquery.min.js"></script>
-		<script type="text/javascript" src="bootstrap.min.js"></script>
-		<script type="text/javascript" 
-		src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 		
 </head>
 
 <body>
 
 <nav class="topbar">
-	
-	<a class="navbar-brand">
-		<img src="images/logo.png" />
-	</a>
-	
-	<button class="toggle-nav">☰</button>
-	
-	<div id="topmenu">
-		<ul class="dropdown">
-			<li id="login-item"><a href="">login</a></li>
-			<li><a href="">rewards</a></li>
-			<li><a href="">exclusive rates</a></li>
-			<li><a href="">find my rate</a></li>
-			<li class="active" id="hiw"><a href="">how it works</a></li>	
-		</ul>
+	<div id="bottombar">	
+		<a class="navbar-brand">
+			<img src="images/logo.png" />
+		</a>
+		
+		<button class="toggle-nav">☰</button>
+		
+		<div id="topmenu">
+			<ul class="dropdown">
+				<li class="active"><a href="">home</a></li>
+				<li><a href="">portfolio</a></li>
+				<li><a href="">about</a></li>
+				<li><a href="">contact</a></li>
+			</ul>
+		</div>
+		
 	</div>
-	
 </nav>
 
-<div class="break"></div>
-
-<div class="jumbotron">
+<div class="container">
 	<div class="row">
 		
-		<div class="col-lg-5 col-md-5 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
-			<h4>This Is Loanner<h4>
-			<h2>We Are Awesome</h2>
-			<p>We have the lowest interest rates and amazing rewards. Join us and see for yourself!</p>
-			<button class="findMyRate first">Find My Rate</button>
+		<div class="col-lg-10 col-md-10 col-sm-9 col-xs-9">
+			<div class="mainframe">
+				<p class="title">Landscape Design at it's Finest</p>
+				<p class="mainp">A good landscape isn't just a pretty back yard, what consitutes a well designed landscape 
+				is typically the functionality of it, as well as the aesthetics of course.</p>
+				
+				<div class="row">
+				  <div class="point1">
+					<div class="circle1">
+					  <div class="number">1</div>
+					</div>
+					<div class="phrase1">
+					  A landscape needs to be functional
+					</div>
+				  </div>
+				</div>
+
+				<div class="row">
+				  <div class="point2">
+					<div class="circle2">
+					  <div class="number">2</div>
+					</div>
+					<div class="phrase2">
+					  It has to be an extension of the interior spaces
+					</div>
+				  </div>
+				</div>
+
+				<div class="row">
+				  <div class="point3">
+					<div class="circle3">
+					  <div class="number">3</div>
+					</div>
+					<div class="phrase3">
+					  It has to enhance the property
+					</div>
+				  </div>
+				</div>
+
+				<div class="row">
+				  <div class="point4">
+					<div class="circle4">
+					  <div class="number">4</div>
+					</div>
+					<div class="phrase4">
+					  A good landscape will provide opportunities for relaxation and entertaining 
+					</div>
+				  </div>
+				</div>
+				
+			</div>
 		</div>
 		
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-xs-offset-1">
-			<form method="get">
-				<input class="postalCode" type="text" name="postalCode" placeholder="Enter Your Postal Code" 
-				autocomplete="on" required />
-				<button class="submitPostalCode"> GO </button>
-			</form>
+		<div class="connect col-lg-1 col-md-1 col-sm-1 col-xs-1">
+			<div class="connect">
+				<ul>
+					<li><a href="https://ca.linkedin.com/in/marietta-mnatsakanian-371a3b21" target="_blank"><img src="images/linkedin.jpg"></a>
+					<li><a href="https://twitter.com/MariettaMnats" target="_blank"><img src="images/twitter.png"></a></li>
+					<li><a href="https://plus.google.com/103177514776558866212" target="_blank"><img src="images/googleplus.png"></a></li>
+				</ul>
+			</div>
 		</div>
 		
 	</div>
-</div>
+ </div>
 
+	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" 
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-
-<script>
+	
+<script type="text/javascript">
 
 $(document).ready(function() {
+
 	$('.toggle-nav').click(function() {
 		$('#topmenu').toggleClass('show');
-	
 	});
 
+	$('div.remove')
+		.contents()
+		.filter(function() {
+		return this.nodeType == Node.TEXT_NODE;
+	}).wrap('<p/>');
 });
 
 
 </script>
-
+	
 </body>
 </html>
 	
